@@ -1,0 +1,408 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica';
+    width: 1512px;
+    height: 982px;
+    background: linear-gradient(0deg, #F6F2FF, #F6F2FF), #FBFAFF;
+}
+
+
+
+/* Landing Component */
+
+.landing {
+    position: relative;
+    width: 1512px;
+    height: 982px;
+    background: linear-gradient(0deg, #F6F2FF, #F6F2FF), #FBFAFF;
+}
+
+.landing img {
+    position: absolute;
+    width: 440px;
+    height: 775.69px;
+    left: calc(50% - 440px/2 - 366px);
+    top: 100px;
+    background: url(image.png);
+    filter: drop-shadow(0px 0px 46.8696px rgba(0, 0, 0, 0.05));
+    border-radius: 35.1522px;
+}
+
+.landing .heading-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0px;
+    gap: 16px;
+    position: absolute;
+    width: 574px;
+    height: 264px;
+    left: calc(50% - 574px/2 + 309px);
+    top: 306px;
+}
+
+.landing .heading-text .heading {
+    /* Heading */
+    width: 574px;
+    height: 192px;
+    /* Inside auto layout */    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.landing .heading-text .heading #intro-text {
+    position: absolute;
+    width: 573.91px;
+    height: 192px;
+    left: 0px;
+    top: 0px;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 64px;
+    /* or 100% */
+    text-align: right;
+    color: #240D57;
+}
+
+.landing .heading-text .heading #snapchat {
+    /* Snapchat */
+    /* position: absolute; */
+    width: 295px;
+    height: 74px;
+    left: 279px;
+    top: 59px;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 74px;
+    /* identical to box height */
+    text-align: right;
+    background: linear-gradient(90deg, #8456EC 24.2%, #E87BF8 120.46%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.landing .heading-text p {
+    width: 521px;
+    height: 56px;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: right;
+    color: #4F4F4F;
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.landing button {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    gap: 10px;
+    position: absolute;
+    width: 320px;
+    height: 55px;
+    left: calc(50% - 320px/2 + 436px);
+    top: 622px;
+    background: linear-gradient(90deg, #8456EC 3.25%, #E87BF8 100%);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.landing button p {  
+    width: 181px;
+    height: 23px;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    /* identical to box height */
+    text-align: right;
+    color: #FFFFFF;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+
+
+/* CreateEvent Component */
+
+.create-event {
+    font-size: 1.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.create-event table {
+    margin: 2rem auto;
+}
+
+.create-event tr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 1rem;
+}
+
+.create-event h1, h3 {
+color: #240D57 ;
+}
+
+.create-event input {
+    padding: 0.5rem 1rem;
+    border-radius: 0.2rem;
+    border: 1px solid black;
+    outline: none;
+}
+
+
+.create-event button {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    gap: 10px;
+    width: 320px;
+    height: 55px;
+    left: calc(50% - 320px/2 + 436px);
+    top: 622px;
+    background: linear-gradient(90deg, #8456EC 3.25%, #E87BF8 100%);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.create-event button p {
+    color: white;
+    font-size: 1.5rem;
+}
+
+
+
+/* Event Component */
+
+.event {
+    position: relative;
+    width: 1512px;
+    height: 982px;
+    background: #FBFAFF;
+}
+
+.event h1 {
+    position: absolute;
+    width: 333px;
+    height: 37px;
+    left: 240px;
+    top: 194px;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 55px;
+    display: flex;
+    align-items: center;
+    color: #240D57;
+}
+
+.event #host {  
+    position: absolute;
+    width: 155px;
+    height: 15px;
+    left: 240px;
+    top: 248px;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #828282;
+}
+
+.event img {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    left: calc(50% - 500px/2 + 266px);
+    top: 184px;
+    border-radius: 0px;
+}
+
+.event .date {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    gap: 137px;
+    position: absolute;
+    height: 72px;
+    left: 240px;
+    right: 826px;
+    top: 320px;
+    border-radius: 10px;
+}
+
+.event .date .date-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 20px;
+    width: 277px;
+    height: 56px;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.event .date .date-info .text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 3px;
+    width: 109px;
+    height: 45px;
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.event .date .date-info .text #main-text {
+    width: 155px;
+    height: 21px;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+    color: #240D57;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.event .date .date-info .text p {
+    width: 253px;
+    height: 21px;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+    color: #4F4F4F;
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.event .location {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    gap: 137px;
+    position: absolute;
+    height: 72px;
+    left: 240px;
+    right: 826px;
+    top: 409px;
+    border-radius: 10px;
+}
+
+.event .location .location-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 20px;
+    width: 277px;
+    height: 56px;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.event .location .location-info .text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 3px;
+    width: 109px;
+    height: 45px;
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.event .location .location-info .text #main-text {
+    width: 104px;
+    height: 21px;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+    color: #240D57;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.event .location .location-info .text p {
+    width: 196px;
+    height: 21px;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+    color: #4F4F4F;
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
